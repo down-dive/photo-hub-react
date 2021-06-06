@@ -16,6 +16,10 @@ function Nav() {
         },
     ];
 
+    function categorySelected() {
+        console.log("hello")
+      }
+
     return
     <header>
         <h2>
