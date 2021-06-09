@@ -3,7 +3,6 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Gallery from './components/Gallery';
 
-
 function App() {
   const [categories] = useState([
     {
@@ -17,11 +16,6 @@ function App() {
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
-  // useEffect(() => {
-  //   document.title = capitalizeFirstLetter(currentCategory.name);
-  // }, [currentCategory]);
-
-
   return (
     <div>
       <Nav
@@ -30,10 +24,8 @@ function App() {
         currentCategory={currentCategory}
       ></Nav>
       <main>
-        <div>
-          <Gallery></Gallery>
-          <About></About>
-        </div>
+        <Gallery currentCategory={currentCategory}></Gallery>
+        <About></About>
       </main>
     </div>
   );
