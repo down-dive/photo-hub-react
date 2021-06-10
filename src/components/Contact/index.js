@@ -19,7 +19,7 @@ function ContactForm() {
             </div>
             <div>
               <label htmlFor="message">Message:</label>
-              <textarea name="message" rows="5" />
+              <textarea name="message" defaultValue={message} rows="5"  />
             </div>
             <button type="submit">Submit</button>
           </form>
