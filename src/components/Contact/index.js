@@ -20,11 +20,11 @@ function ContactForm() {
               <input type="text" defaultValue={name} onChange={handleChange} name="name" />            </div>
             <div>
               <label htmlFor="email">Email address:</label>
-              <input type="email" defaultValue={email} name="email" />
+              <input type="email" defaultValue={email} onChange={handleChange} name="email" />
             </div>
             <div>
               <label htmlFor="message">Message:</label>
-              <textarea name="message" defaultValue={message} rows="5"  />
+              <textarea name="message" defaultValue={message} onChange={handleChange} rows="5"  />
             </div>
             <button type="submit">Submit</button>
           </form>
