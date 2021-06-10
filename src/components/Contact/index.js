@@ -6,6 +6,12 @@ function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
 
+    if (e.target.name === 'email') {
+        const isValid = validateEmail(e.target.value);
+        console.log(isValid);
+        // isValid conditional statement
+      } 
+
     function handleChange(e) {
         setFormState({ ...formState, [e.target.name]: e.target.value })
     }
