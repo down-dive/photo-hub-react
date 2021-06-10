@@ -22,6 +22,7 @@ function ContactForm() {
 
     function handleChange(e) {
         setFormState({ ...formState, [e.target.name]: e.target.value })
+        console.log('errorMessage', errorMessage);
     }
     // JSX
     function handleSubmit(e) {
