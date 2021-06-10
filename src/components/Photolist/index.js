@@ -106,6 +106,7 @@ const PhotoList = ({ category }) => {
 
   return (
     <div>
+      <Modal />
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
           <img
