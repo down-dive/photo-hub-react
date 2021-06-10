@@ -12,7 +12,7 @@ function ContactForm() {
           <form id="contact-form">
             <div>
               <label htmlFor="name">Name:</label>
-              <input type="text" defaultValue={name} name="name" />            </div>
+              <input type="text" defaultValue={name} onChange={handleChange} name="name" />            </div>
             <div>
               <label htmlFor="email">Email address:</label>
               <input type="email" defaultValue={email} name="email" />
