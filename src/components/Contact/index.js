@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const { name, email, message } = formState;
+
 
     // JSX
     return (
@@ -10,8 +12,7 @@ function ContactForm() {
           <form id="contact-form">
             <div>
               <label htmlFor="name">Name:</label>
-              <input type="text" name="name" />
-            </div>
+              <input type="text" defaultValue={name} name="name" />            </div>
             <div>
               <label htmlFor="email">Email address:</label>
               <input type="email" name="email" defaultValue={formState.name} />
