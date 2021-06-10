@@ -14,7 +14,7 @@ function ContactForm() {
             </div>
             <div>
               <label htmlFor="email">Email address:</label>
-              <input type="email" name="email" />
+              <input type="email" name="email" defaultValue={formState.name} />
             </div>
             <div>
               <label htmlFor="message">Message:</label>
