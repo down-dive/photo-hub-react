@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 function ContactForm() {
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
     // JSX
     return (
