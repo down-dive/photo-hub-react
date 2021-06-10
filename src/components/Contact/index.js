@@ -4,8 +4,13 @@ function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
 
-
+    function handleChange(e) {
+        setFormState({...formState, name: e.target.value })
+      }
+      
+      console.log(formState);
     // JSX
+    
     return (
         <section>
           <h1>Contact me</h1>
