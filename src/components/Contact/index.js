@@ -12,7 +12,13 @@ function ContactForm() {
         const isValid = validateEmail(e.target.value);
         console.log(isValid);
         // isValid conditional statement
-      } 
+        // isValid conditional statement
+        if (!isValid) {
+            setErrorMessage('Your email is invalid.');
+        } else {
+            setErrorMessage('');
+        }
+    }
 
     function handleChange(e) {
         setFormState({ ...formState, [e.target.name]: e.target.value })
